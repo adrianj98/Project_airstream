@@ -13,7 +13,7 @@ page is the single place to see where everything stands.
 | Project | What it is | Status |
 | --- | --- | --- |
 | [Electrical box update](projects/electrical-box-update/) | Update electrical box | Not started |
-| [300Ah battery box](projects/battery-box-300ah/) | Build a box for the 300Ah battery | Not started |
+| [300Ah battery box](projects/battery-box-300ah/) | Build a box for the 300Ah battery | Planning |
 | [Pickup solar](projects/pickup-solar/) | Add solar to the pickup | Not started |
 
 Status values: `Not started` → `Planning` → `In progress` → `Done` → `On hold`
