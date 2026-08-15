@@ -15,10 +15,19 @@ Newest entry first.
   outlets, separate fuse on the PV input. Negative side is an unfused common bus bar
   fed from the shunt's SYSTEM MINUS, with every return landing there so nothing
   bypasses the shunt.
-- Flagged a space constraint: the ~6.4" × 7.6" × 11" equipment bay won't take the
-  MPPT, shunt, Class T holder and fuse block all flat on the floor. MPPT goes on the
-  end wall vertically. Also flagged the sealed-vs-vented tension between the IP-rated
-  fittings and MPPT cooling.
+- Picked candidate products for the busbars and fuse blocks and checked each against
+  the 6.38" × 7.375" × 11.19" equipment bay. Two findings worth remembering:
+  - The Blue Sea 5502 Class T block is ~7.0" long, longer than the bay. It only fits
+    crosswise, with under 3/8" of slack against the 7.375" width. The Blue Sea 2151
+    MRBF terminal block avoids the problem entirely by mounting on the battery post,
+    at 10kA interrupt instead of Class T's 20kA.
+  - MRBF blocks need 3/8" (M10) studs. Many compact busbars ship with M8, so the
+    busbar has to be bought with 3/8" studs if the branches are fused with MRBF.
+- Laid out the bay: MPPT vertical on the end wall, fuse block and shunt on the bay
+  side walls, Class T and positive busbar crosswise on the floor. The floor alone is
+  47 sq in and the parts total more than that, so the wall area is what makes it work.
+- Also flagged the sealed-vs-vented tension between the IP-rated fittings and MPPT
+  cooling.
 - Layout: with a 15.12" battery in a 21.5" box there is ~6.4" of length spare for
   the MPPT and shunt to sit alongside it — the reason a double box suits a single
   battery.

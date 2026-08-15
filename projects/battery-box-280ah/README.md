@@ -118,18 +118,61 @@ Battery (−) ──> SmartShunt [BATTERY MINUS | SYSTEM MINUS] ──> negative
 
 The four Anderson sets map neatly onto this: PV in, DC out, vehicle charge in, spare.
 
-### Space check
+### Candidate products and whether they fit
 
-The equipment bay is roughly 6.4" long × 7.6" wide × 11" tall, and the parts above
-will not all sit flat on the floor of it. The MPPT is designed for vertical wall
-mounting — put it on the inside end wall, and keep the floor for the shunt, Class T
-holder and fuse block. Worth laying out on cardboard before drilling.
+Equipment bay: **6.38" long × 7.375" wide × 11.19" tall** (box interior minus the
+15.12" battery).
 
-Also worth checking: the MPPT dissipates heat and wants convection clearance, while
-the Anderson plates and bulkhead are all sealed fittings. Camco boxes normally carry
-vent slots for lead-acid off-gassing — those are unnecessary for LiFePO4 but useful
-here for MPPT cooling, so decide deliberately whether this box ends up sealed or
-vented.
+| Part | Product | Dimensions | Verdict |
+| --- | --- | --- | --- |
+| Charge controller | Victron SmartSolar MPPT 100/20-48 | 3.94 × 5.16 × 2.36" (100 × 131 × 60mm) | End wall, vertical |
+| Monitor | Victron SmartShunt 500A | 4.7 × 1.8 × 2.1" | Bay side wall |
+| Main fuse | Blue Sea 5502 Class T block, 225–400A | ~7.0 × 2.3" | **Crosswise only** — see below |
+| Main fuse (alt) | Blue Sea 2151 dual MRBF terminal block | Mounts on the 3/8" battery post | Zero floor space |
+| Busbars ×2 | 250–300A 4-stud with cover (e.g. jamgoer 300A) | 5.43 × 2.72 × 1.75" (138 × 69 × 44.5mm) | One floor, one wall |
+| Branch fuses | Blue Sea 5025 ST blade block, 6 ckt + neg bus | 3.32W × 4.9H × 1.52D" | Bay side wall |
+| High-current branch fuses | Blue Sea 5191 MRBF, 30–300A | Screws onto a 3/8" busbar stud | No extra footprint |
+
+### Two gotchas
+
+**The Class T block is longer than the bay.** At ~7.0" it does not fit along the
+6.38" length — it has to go crosswise, where 7.0" against the 7.375" width leaves
+under 3/8" total clearance. It fits, but there is no room to be careless. The
+alternative is the MRBF terminal block on the battery post, which costs nothing in
+floor space.
+
+Class T carries a 20kA interrupt rating and is what ABYC E-13 calls for on lithium.
+MRBF fuses are 10kA, which is generally accepted for a single 12V battery — a lone
+280Ah pack's prospective short-circuit current sits below that. Class T is the
+conservative call and it does fit; MRBF is the defensible space-saver.
+
+**Stud sizes have to match.** The MRBF blocks mount on 3/8" (M10) studs. Plenty of
+compact busbars ship with M8 (5/16") studs instead — the jamgoer above is M8. If the
+plan is to fuse the high-current branches with MRBF blocks screwed straight onto the
+positive busbar, buy a busbar with **3/8" studs**.
+
+### Suggested layout
+
+- **End wall** (7.375 × 11.19") — MPPT, mounted vertically and high, keeping the
+  floor beneath it clear
+- **Bay side wall A** (6.38 × 11.19") — blade fuse block
+- **Bay side wall B** — SmartShunt, plus the negative busbar
+- **Floor** (6.38 × 7.375") — Class T block crosswise, positive busbar crosswise
+  in front of it
+
+Everything lands with margin, and the wall area is what makes it work — the floor
+alone is 47 sq in and the parts total more than that. Mock it up on cardboard before
+drilling.
+
+Note the side walls above the battery are not usable: only 1.15" of clearance over
+the case.
+
+### Sealed or vented
+
+The MPPT dissipates heat and wants convection clearance, while the Anderson plates
+and bulkhead are all sealed fittings. Camco boxes normally carry vent slots for
+lead-acid off-gassing — unnecessary for LiFePO4 but useful here for MPPT cooling.
+Decide this deliberately rather than discovering it in August.
 
 ### Also not yet in the BOM
 

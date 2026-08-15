@@ -20,14 +20,25 @@ environment. Fill in from the order confirmation.
 
 Not yet sourced. See the safety notes in [README.md](README.md).
 
-| # | Part | Spec | Why | Status |
+Dimensions are checked against the 6.38" × 7.375" × 11.19" equipment bay. See the
+layout section in [README.md](README.md).
+
+| # | Part | Candidate product | Spec / dimensions | Status |
 | --- | --- | --- | --- | --- |
-| — | Class T fuse + holder | ~250A | Main battery protection. Above the 200A BMS ceiling, below 2/0 ampacity. Class T for the ~20kA interrupt rating LiFePO4 needs | Needed |
-| — | Positive bus bar | 250A+ | Distribution after the Class T | Needed |
-| — | Negative bus bar | 250A+ | Common return, fed from the shunt's SYSTEM MINUS. Never fused | Needed |
-| — | Blade fuse block | 6 circuits, ~30A/circuit | Starlink feed and other small loads | Needed |
-| — | MRBF or MIDI fuses | Sized per outlet | The 120A Anderson outlets exceed a blade block | Needed |
-| — | Fuse or breaker for PV input | Per panel Voc/Isc | Protect the solar run ahead of the MPPT | Needed |
-| — | Battery disconnect switch | 300A+ | Isolate the battery for service | Needed |
+| — | Class T fuse block + fuse | Blue Sea 5502 | 225–400A block, ~7.0 × 2.3". Fit a 250A fuse. Mounts crosswise only | Needed |
+| — | *or* MRBF terminal fuse block | Blue Sea 2151 dual | 300A max, mounts on the 3/8" battery post. 10kA vs Class T's 20kA | Alternative |
+| — | Positive bus bar | 250–300A, 4 stud, covered | 5.43 × 2.72 × 1.75". **Buy 3/8" studs** if fusing branches with MRBF | Needed |
+| — | Negative bus bar | same | Fed from the shunt's SYSTEM MINUS. Never fused | Needed |
+| — | Blade fuse block | Blue Sea 5025 | 6 circuits, 30A/circuit, 100A total, negative bus + cover. 3.32 × 4.9 × 1.52" | Needed |
+| — | MRBF terminal fuse blocks | Blue Sea 5191 | 30–300A, screws onto a 3/8" busbar stud. For the 120A Anderson branches | Needed |
+| — | Fuse or breaker for PV input | | Per panel Voc/Isc — size once panels are chosen | Needed |
+| — | Battery disconnect switch | | 300A+ | Needed |
 | — | 2/0–4/0 cable, lugs, heat shrink | | Main runs | Needed |
 | — | Hydraulic lug crimper | | To make the above up properly | Needed |
+
+Reference dimensions for the parts already owned:
+
+| Part | Dimensions |
+| --- | --- |
+| Victron SmartSolar MPPT 100/20-48 | 3.94 × 5.16 × 2.36" (100 × 131 × 60mm), 0.65kg |
+| Victron SmartShunt 500A | 4.7 × 1.8 × 2.1" |
