@@ -10,7 +10,13 @@ Newest entry first.
   SmartShunt IP65 500A.
 - Prices not recorded — Amazon listing prices did not render in the build
   environment.
-- Flagged a fit concern: the Camco 55375 interior is 7-3/8" wide, which is narrower
-  than many common 12V 300Ah LiFePO4 batteries. Needs measuring before anything else.
+- Corrected an earlier fit concern. It was based on the older 20.55 × 9.33 × 8.58"
+  300Ah form factor; current Group 31 300Ah batteries are ~13.75–15.16" long and
+  ~7.6" wide, so the battery does plausibly fit. Width is still marginal against the
+  7-3/8" stated interior and wants measuring, but is no longer disqualifying.
+- Worked out the intended layout: a ~13-3/4" battery in a 21-1/2" box leaves ~7-3/4"
+  of length for the MPPT and shunt to mount alongside — the reason a double box is
+  being used for a single battery.
+- Noted that no fusing, bus bars or cable are in the BOM yet.
 - Started the project. Recorded the part links that make up the box — four
   initially, a fifth (the SmartShunt) added the same day.
