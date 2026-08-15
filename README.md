@@ -1,7 +1,7 @@
 # Project Airstream — Master Report
 
 Rollup of every sub-project in this repo. Each project lives in its own folder under
-[`projects/`](projects/) with its own plan, bill of materials, and build log. This
+[`projects/`](projects/) with its own notes, bill of materials, and build log. This
 page is the single place to see where everything stands.
 
 **Last updated:** 2026-08-15
@@ -10,48 +10,13 @@ page is the single place to see where everything stands.
 
 ## Status board
 
-| Project | What it is | Status | Blocked on | Spend |
-| --- | --- | --- | --- | --- |
-| [Electrical box update](projects/electrical-box-update/) | Rework the distribution panel: proper fusing, labeling, room to grow | Planning | As-found wiring audit | $0 |
-| [300Ah battery box](projects/battery-box-300ah/) | Enclosure + hold-down for the 300Ah battery | Planning | Battery dimensions & mount location | $0 |
-| [Pickup solar](projects/pickup-solar/) | Solar array on the truck feeding the house battery | Planning | Power budget → array sizing | $0 |
+| Project | What it is | Status |
+| --- | --- | --- |
+| [Electrical box update](projects/electrical-box-update/) | Update electrical box | Not started |
+| [300Ah battery box](projects/battery-box-300ah/) | Build a box for the 300Ah battery | Not started |
+| [Pickup solar](projects/pickup-solar/) | Add solar to the pickup | Not started |
 
-**Totals:** 3 projects · 0 done · 3 planning · $0 spent
-
-Status values: `Idea` → `Planning` → `In progress` → `Done` → `On hold`
-
----
-
-## How the projects connect
-
-All three touch the same DC system, so the order matters:
-
-```
-300Ah battery box ──┐
-                    ├──► Electrical box update ──► loads
-Pickup solar ───────┘        (fusing, bus bars, monitoring)
-```
-
-- The **battery** sets the main fuse size and the bus bar rating in the electrical box.
-- The **solar controller** output lands in the electrical box and must match the
-  battery's chemistry and charge profile.
-- So: confirm the battery first, design the electrical box around it, and size solar
-  against a real power budget. Doing the panel first means opening it twice.
-
-Shared numbers live in [`docs/power-budget.md`](docs/power-budget.md) — fill that in
-before ordering anything expensive.
-
----
-
-## Next actions
-
-The one thing to do next per project:
-
-1. **Electrical box** — photograph the box as-found and trace every existing circuit.
-2. **Battery box** — get the exact model, dimensions, weight, and chemistry; pick the mount location.
-3. **Pickup solar** — fill in the power budget so the array can be sized honestly.
-
-All three are measurement tasks. None of them cost money, and all of them block spending.
+Status values: `Not started` → `Planning` → `In progress` → `Done` → `On hold`
 
 ---
 
@@ -62,6 +27,8 @@ publishes it to GitHub Pages via
 [`.github/workflows/publish.yml`](https://github.com/adrianj98/Project_airstream/blob/main/.github/workflows/publish.yml).
 Each `.md` file becomes a page; anything in `assets/` (photos, diagrams, existing
 `.html` files) is copied through as-is.
+
+Site: https://adrianj98.github.io/Project_airstream/
 
 To preview locally before pushing:
 
@@ -80,14 +47,14 @@ open _site/index.html
 ├── README.md            # this master report
 ├── projects/            # one folder per sub-project
 │   └── <project-name>/
-│       ├── README.md    # goal, requirements, design, tasks
+│       ├── README.md    # what the project is, notes, tasks
 │       ├── BOM.md       # bill of materials + costs
 │       ├── LOG.md       # dated build log, newest first
-│       └── assets/      # photos, diagrams, datasheets, cut lists
+│       └── assets/      # photos, diagrams, datasheets
 ├── templates/
 │   └── project-template/  # copy this to start a new sub-project
 ├── tools/build_site.py  # markdown -> html site builder
-└── docs/                # cross-project notes (power budget, vendors, specs)
+└── docs/                # notes that span more than one project
 ```
 
 ## Adding a sub-project
@@ -96,7 +63,7 @@ open _site/index.html
 cp -r templates/project-template projects/<new-project-name>
 ```
 
-Then fill in the README header, add a row to the status board above, and start logging.
+Then fill in the README, add a row to the status board above, and start logging.
 
 ## Conventions
 
