@@ -1,0 +1,24 @@
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# CAD / design scratch files
+*~
+*.bak
+*.blend1
+*.FCStd1
+*.stl.tmp
+*-Backup*.f3d
+
+# Large media dumps — keep curated photos in <project>/assets/
+*.mov
+*.mp4
+*.raw
+*.CR2
+*.ARW
