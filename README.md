@@ -55,6 +55,24 @@ All three are measurement tasks. None of them cost money, and all of them block 
 
 ---
 
+## Published site
+
+Every push or merge to `main` rebuilds this repo into a browsable HTML site and
+publishes it to GitHub Pages via
+[`.github/workflows/publish.yml`](https://github.com/adrianj98/Project_airstream/blob/main/.github/workflows/publish.yml).
+Each `.md` file becomes a page; anything in `assets/` (photos, diagrams, existing
+`.html` files) is copied through as-is.
+
+To preview locally before pushing:
+
+```sh
+pip install markdown
+python tools/build_site.py --out _site
+open _site/index.html
+```
+
+`_site/` is generated output and is git-ignored — never commit it.
+
 ## Repo layout
 
 ```
@@ -68,6 +86,7 @@ All three are measurement tasks. None of them cost money, and all of them block 
 │       └── assets/      # photos, diagrams, datasheets, cut lists
 ├── templates/
 │   └── project-template/  # copy this to start a new sub-project
+├── tools/build_site.py  # markdown -> html site builder
 └── docs/                # cross-project notes (power budget, vendors, specs)
 ```
 
