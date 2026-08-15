@@ -7,11 +7,18 @@ Newest entry first.
 - Battery is a **WattCycle 12V 280Ah Mini** — 15.12" × 7.64" × 10.04", 59.5 lb,
   200A BMS, EVE LF280K A+ cells, 3584Wh. Renamed the project from 300Ah to 280Ah
   to match.
-- Ran the fit against the Camco 55375. Length and height are fine with room to
-  spare; **width is over by about 1/4" (7.64" battery vs 7-3/8" stated interior)**.
-  The box is dimensioned for two Group 24s end to end, and Group 24 is 6.8" wide,
-  so it was never sized for this case. Next step is measuring the real interior at
-  seating height and checking for moulded ribs before deciding to swap enclosures.
+- **Fit confirmed in person — the battery goes in.** The published 7.64" width is
+  the widest point and the case is tapered, so it seats fine against the 7-3/8"
+  interior. Enclosure stays as-is.
+- Worked out the distribution scheme: Class T (~250A) at the battery positive into a
+  positive bus bar, blade fuse block for small loads, MRBF/MIDI for the 120A Anderson
+  outlets, separate fuse on the PV input. Negative side is an unfused common bus bar
+  fed from the shunt's SYSTEM MINUS, with every return landing there so nothing
+  bypasses the shunt.
+- Flagged a space constraint: the ~6.4" × 7.6" × 11" equipment bay won't take the
+  MPPT, shunt, Class T holder and fuse block all flat on the floor. MPPT goes on the
+  end wall vertically. Also flagged the sealed-vs-vented tension between the IP-rated
+  fittings and MPPT cooling.
 - Layout: with a 15.12" battery in a 21.5" box there is ~6.4" of length spare for
   the MPPT and shunt to sit alongside it — the reason a double box suits a single
   battery.

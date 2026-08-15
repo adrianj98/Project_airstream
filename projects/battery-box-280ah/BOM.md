@@ -20,11 +20,14 @@ environment. Fill in from the order confirmation.
 
 Not yet sourced. See the safety notes in [README.md](README.md).
 
-| # | Part | Why | Status |
-| --- | --- | --- | --- |
-| — | Class T fuse + holder | Main battery protection. Sized above the 200A BMS limit | Needed |
-| — | Battery disconnect switch | Isolate the battery for service | Needed |
-| — | Fuse for solar input | Protect the PV run into the MPPT | Needed |
-| — | Positive + negative bus bars | Land the loads and the shunt | Needed |
-| — | 2/0–4/0 cable, lugs, heat shrink | Main runs | Needed |
-| — | Hydraulic lug crimper | To make the above up properly | Needed |
+| # | Part | Spec | Why | Status |
+| --- | --- | --- | --- | --- |
+| — | Class T fuse + holder | ~250A | Main battery protection. Above the 200A BMS ceiling, below 2/0 ampacity. Class T for the ~20kA interrupt rating LiFePO4 needs | Needed |
+| — | Positive bus bar | 250A+ | Distribution after the Class T | Needed |
+| — | Negative bus bar | 250A+ | Common return, fed from the shunt's SYSTEM MINUS. Never fused | Needed |
+| — | Blade fuse block | 6 circuits, ~30A/circuit | Starlink feed and other small loads | Needed |
+| — | MRBF or MIDI fuses | Sized per outlet | The 120A Anderson outlets exceed a blade block | Needed |
+| — | Fuse or breaker for PV input | Per panel Voc/Isc | Protect the solar run ahead of the MPPT | Needed |
+| — | Battery disconnect switch | 300A+ | Isolate the battery for service | Needed |
+| — | 2/0–4/0 cable, lugs, heat shrink | | Main runs | Needed |
+| — | Hydraulic lug crimper | | To make the above up properly | Needed |

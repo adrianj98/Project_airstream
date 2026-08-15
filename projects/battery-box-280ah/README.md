@@ -54,28 +54,16 @@ dust covers, an IP68 bulkhead, an IP65 shunt, and two Bluetooth units with no
 displays. The box is meant to be closed up and operated entirely from outside and
 from the phone.
 
-### Fit — the battery is ~1/4" too wide for the box
+### Fit — resolved, it fits
 
 | | Battery | Box interior | Result |
 | --- | --- | --- | --- |
 | Length | 15.12" | 21.50" | Fits, 6.4" spare |
 | Height | 10.04" | 11.19" | Fits, 1.15" above the case |
-| **Width** | **7.64"** | **7.375"** | **Over by ~0.27" (7mm)** |
+| Width | 7.64" | 7.375" | Fits — battery case is tapered |
 
-The 55375 is a "double" box in the sense of two Group 24 batteries end to end, and
-Group 24 is 6.8" wide — so the 7-3/8" interior was never sized for a 7.64" case.
-
-Worth checking in person before giving up on it, because published interior
-dimensions are usually the floor measurement:
-
-- Molded polymer boxes taper for draft, so the opening is often wider than the base.
-  Measure at the height the battery actually sits.
-- Many battery boxes have vertical ribs moulded into the side walls. If the 7-3/8"
-  is measured across the ribs, relieving them could recover the 1/4" needed.
-
-If it genuinely will not fit, the length and height both have room to spare, so the
-fix is a slightly wider enclosure rather than a rethink — a Group 8D box or a
-similar case, keeping every other part and the whole layout unchanged.
+Checked in person. The published 7.64" is the widest point; the case tapers, so it
+seats fine in the box. No enclosure change needed.
 
 ### Layout
 
@@ -92,17 +80,61 @@ above it — which is what makes a double box the right pick for a single batter
 - The 200A BMS is the real system ceiling. The 120A Andersons sit comfortably under
   it; the 500A shunt is oversized but harmless.
 
-### Not yet in the BOM
+## Distribution — bus bar and fuse block
 
-No overcurrent protection is in the parts list yet. A 280Ah LiFePO4 can deliver
-enormous short-circuit current, so before this gets wired:
+Both are needed. They do different jobs and are not interchangeable: the positive
+side needs *protection*, the negative side needs *joining*.
 
-- Class T main fuse on the battery positive (its high interrupt rating is the
-  reason it's the usual call for LiFePO4 over ANL)
-- Fuse on the solar input, plus a battery disconnect switch
-- Positive and negative bus bars, 2/0–4/0 cable, lugs, hydraulic crimper
-- Wiring note: every negative load must return through the shunt or the
-  state-of-charge reading will be wrong
+### Positive — fused
+
+```
+Battery (+) ──> Class T fuse ──> positive bus bar ──┬─> [fuse] MPPT
+                  (~250A)                           ├─> [fuse] Starlink bulkhead
+                                                    ├─> [fuse] Anderson outlet
+                                                    └─> [fuse] Anderson outlet
+```
+
+- **Class T fuse at the battery post, ~250A.** Sits above the 200A BMS ceiling so
+  the BMS trips first on ordinary overcurrent, and below 2/0 cable ampacity. Class T
+  rather than ANL because LiFePO4 short-circuit current demands the higher (~20kA)
+  interrupt rating.
+- **Blade fuse block** (6 circuits, ~30A/circuit) for the Starlink feed and other
+  small loads.
+- **The 120A Anderson outlets exceed a blade block** — give those their own MRBF or
+  MIDI fuses off the positive bus bar.
+- **Solar input gets its own fuse or breaker** on the PV side, ahead of the MPPT.
+
+### Negative — not fused
+
+```
+Battery (−) ──> SmartShunt [BATTERY MINUS | SYSTEM MINUS] ──> negative bus bar ──> all returns
+```
+
+- Plain common bus bar, 250A+. Negatives are never fused.
+- **Every** negative return lands on this bus bar, and the only path to battery
+  negative is through the shunt. If any load returns straight to the battery post it
+  bypasses the shunt and the state-of-charge reading is permanently wrong. This is
+  the most common SmartShunt install mistake.
+
+The four Anderson sets map neatly onto this: PV in, DC out, vehicle charge in, spare.
+
+### Space check
+
+The equipment bay is roughly 6.4" long × 7.6" wide × 11" tall, and the parts above
+will not all sit flat on the floor of it. The MPPT is designed for vertical wall
+mounting — put it on the inside end wall, and keep the floor for the shunt, Class T
+holder and fuse block. Worth laying out on cardboard before drilling.
+
+Also worth checking: the MPPT dissipates heat and wants convection clearance, while
+the Anderson plates and bulkhead are all sealed fittings. Camco boxes normally carry
+vent slots for lead-acid off-gassing — those are unnecessary for LiFePO4 but useful
+here for MPPT cooling, so decide deliberately whether this box ends up sealed or
+vented.
+
+### Also not yet in the BOM
+
+- Battery disconnect switch
+- 2/0–4/0 cable, lugs, heat shrink, hydraulic crimper
 
 ## Open questions
 
