@@ -66,6 +66,9 @@ Two panels together: **400W, 47.6 lb.**
 
 ## Fit — the panels fit the rack, in one orientation only
 
+![How the panels mount: plan, rear and side views](assets/mounting.svg)
+
+
 Each panel is 51.34" × 30.31". The rack is 54.33" fore-aft by 62.6" wide at its
 narrowest setting. That leaves exactly one workable layout.
 
@@ -106,6 +109,9 @@ Neither is answerable from a listing. Measure both before assuming anything else
 holds.
 
 ## Wiring — series, not parallel
+
+![Wiring: two 200W panels in series through a 15A PV breaker to the MPPT](assets/wiring.svg)
+
 
 Assuming the array feeds the Victron SmartSolar MPPT 100/20 already bought for the
 [280Ah battery box](../battery-box-280ah/) (100V max PV, 20A, 290W nominal at 12V):
@@ -196,6 +202,7 @@ bought yet:
 - [x] Record panel electrical and physical specs
 - [x] Work out panel-on-rack fit and orientation
 - [x] Settle series vs parallel against the MPPT 100/20
+- [x] Draw the mounting and wiring arrangement
 - [ ] Measure the bed and settle the rack fitment question
 - [ ] Source mounting hardware, PV cable and PV breaker
 - [ ] Fill in prices from the order confirmation

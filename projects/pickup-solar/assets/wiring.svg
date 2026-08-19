@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 740" width="860" height="740" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="wf" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L8,3 L0,6 z" fill="#5b6470"/>
+  </marker>
+  <pattern id="cells2" width="14" height="14" patternUnits="userSpaceOnUse">
+    <rect width="14" height="14" fill="#1d3a57"/>
+    <path d="M14,0 L14,14 M0,14 L14,14" stroke="#2e5580" stroke-width="1"/>
+  </pattern>
+</defs>
+
+<rect width="860" height="740" fill="#fbfaf7"/>
+
+<text x="40" y="42" font-size="23" font-weight="700" fill="#1c1e21">Pickup solar - wiring</text>
+<text x="40" y="66" font-size="14" fill="#5b6470">Two 200W panels in SERIES. Viewed from behind the array, as mounted on the rack.</text>
+<line x1="40" y1="82" x2="820" y2="82" stroke="#d8dbe0" stroke-width="1"/>
+
+<!-- panels -->
+<rect x="170" y="110" width="150" height="220" fill="url(#cells2)" stroke="#0e2135" stroke-width="1.5"/>
+<rect x="330" y="110" width="150" height="220" fill="url(#cells2)" stroke="#0e2135" stroke-width="1.5"/>
+<text x="245" y="210" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">PANEL A</text>
+<text x="245" y="230" font-size="11.5" fill="#c6d6e6" text-anchor="middle">200W</text>
+<text x="245" y="248" font-size="10.5" fill="#9fb6cc" text-anchor="middle">Voc 27.31V</text>
+<text x="405" y="210" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">PANEL B</text>
+<text x="405" y="230" font-size="11.5" fill="#c6d6e6" text-anchor="middle">200W</text>
+<text x="405" y="248" font-size="10.5" fill="#9fb6cc" text-anchor="middle">Voc 27.31V</text>
+
+<!-- terminals -->
+<circle cx="195" cy="330" r="7" fill="#ffffff" stroke="#1c1e21" stroke-width="2"/>
+<text x="195" y="334" font-size="11" font-weight="700" fill="#1c1e21" text-anchor="middle">-</text>
+<circle cx="295" cy="330" r="7" fill="#ffffff" stroke="#c0392b" stroke-width="2"/>
+<text x="295" y="334" font-size="11" font-weight="700" fill="#c0392b" text-anchor="middle">+</text>
+<circle cx="355" cy="330" r="7" fill="#ffffff" stroke="#1c1e21" stroke-width="2"/>
+<text x="355" y="334" font-size="11" font-weight="700" fill="#1c1e21" text-anchor="middle">-</text>
+<circle cx="455" cy="330" r="7" fill="#ffffff" stroke="#c0392b" stroke-width="2"/>
+<text x="455" y="334" font-size="11" font-weight="700" fill="#c0392b" text-anchor="middle">+</text>
+
+<!-- series jumper -->
+<path d="M295,337 L295,378 L355,378 L355,337" fill="none" stroke="#7a4b8a" stroke-width="3"/>
+<rect x="248" y="388" width="156" height="34" rx="5" fill="#f4eef7" stroke="#7a4b8a" stroke-width="1.2"/>
+<text x="326" y="403" font-size="11" font-weight="700" fill="#7a4b8a" text-anchor="middle">SERIES LINK</text>
+<text x="326" y="416" font-size="10.5" fill="#7a4b8a" text-anchor="middle">A(+) to B(-) - MC4 to MC4</text>
+
+<!-- positive run -->
+<path d="M455,337 L455,470 L515,470" fill="none" stroke="#c0392b" stroke-width="3"/>
+<path d="M575,470 L640,470" fill="none" stroke="#c0392b" stroke-width="3" marker-end="url(#wf)"/>
+<text x="466" y="424" font-size="11" font-weight="700" fill="#c0392b">STRING +</text>
+
+<!-- breaker -->
+<rect x="515" y="452" width="60" height="36" rx="4" fill="#ffffff" stroke="#c0392b" stroke-width="2"/>
+<text x="545" y="468" font-size="11" font-weight="700" fill="#c0392b" text-anchor="middle">15A</text>
+<text x="545" y="481" font-size="9.5" fill="#c0392b" text-anchor="middle">breaker</text>
+<text x="545" y="506" font-size="10" fill="#8a939e" text-anchor="middle">PV disconnect</text>
+<text x="545" y="518" font-size="10" fill="#8a939e" text-anchor="middle">Isc 8.91 x 1.25 = 11.1A</text>
+
+<!-- negative run -->
+<path d="M195,337 L195,560 L640,560" fill="none" stroke="#1c1e21" stroke-width="3" marker-end="url(#wf)"/>
+<text x="210" y="552" font-size="11" font-weight="700" fill="#1c1e21">STRING -</text>
+
+<!-- controller -->
+<rect x="640" y="424" width="184" height="176" rx="8" fill="#ffffff" stroke="#5b6470" stroke-width="2" stroke-dasharray="8 4"/>
+<text x="732" y="450" font-size="12.5" font-weight="700" fill="#1c1e21" text-anchor="middle">MPPT CHARGE</text>
+<text x="732" y="467" font-size="12.5" font-weight="700" fill="#1c1e21" text-anchor="middle">CONTROLLER</text>
+<line x1="656" y1="480" x2="808" y2="480" stroke="#d8dbe0" stroke-width="1"/>
+<text x="732" y="500" font-size="11" fill="#5b6470" text-anchor="middle">Victron SmartSolar</text>
+<text x="732" y="516" font-size="11" fill="#5b6470" text-anchor="middle">MPPT 100/20</text>
+<text x="732" y="540" font-size="10.5" fill="#8a939e" text-anchor="middle">100V max PV / 20A</text>
+<text x="732" y="554" font-size="10.5" fill="#8a939e" text-anchor="middle">290W nominal at 12V</text>
+<text x="732" y="578" font-size="10" font-style="italic" fill="#8a939e" text-anchor="middle">held for the battery box</text>
+<text x="732" y="590" font-size="10" font-style="italic" fill="#8a939e" text-anchor="middle">- separate project</text>
+
+<!-- string spec -->
+<rect x="520" y="110" width="304" height="176" rx="8" fill="#ffffff" stroke="#d8dbe0" stroke-width="1"/>
+<text x="536" y="133" font-size="12.5" font-weight="700" fill="#1c1e21">Series string output</text>
+<line x1="536" y1="142" x2="808" y2="142" stroke="#e3e6ea" stroke-width="1"/>
+<text x="536" y="162" font-size="11.5" fill="#5b6470">Power</text><text x="808" y="162" font-size="11.5" font-weight="600" fill="#1c1e21" text-anchor="end">400W</text>
+<text x="536" y="182" font-size="11.5" fill="#5b6470">Voc (STC)</text><text x="808" y="182" font-size="11.5" font-weight="600" fill="#1c1e21" text-anchor="end">54.62V</text>
+<text x="536" y="202" font-size="11.5" fill="#5b6470">Voc at -10 C</text><text x="808" y="202" font-size="11.5" font-weight="600" fill="#1c1e21" text-anchor="end">~60V  (limit 100V)</text>
+<text x="536" y="222" font-size="11.5" fill="#5b6470">Vmp</text><text x="808" y="222" font-size="11.5" font-weight="600" fill="#1c1e21" text-anchor="end">47.48V</text>
+<text x="536" y="242" font-size="11.5" fill="#5b6470">Imp</text><text x="808" y="242" font-size="11.5" font-weight="600" fill="#1c1e21" text-anchor="end">8.43A</text>
+<text x="536" y="262" font-size="11.5" fill="#5b6470">Isc</text><text x="808" y="262" font-size="11.5" font-weight="600" fill="#1c1e21" text-anchor="end">8.91A  (limit 20A)</text>
+<text x="536" y="280" font-size="10.5" font-style="italic" fill="#8a939e">Clears both controller limits with margin.</text>
+
+<!-- warning -->
+<rect x="40" y="612" width="470" height="104" rx="8" fill="#fdf2f0" stroke="#c0392b" stroke-width="1.4"/>
+<text x="56" y="636" font-size="12.5" font-weight="700" fill="#c0392b">Do NOT wire these in parallel</text>
+<text x="56" y="657" font-size="11" fill="#8c2f22">Parallel puts 2 x 8.91 = 17.82A of Isc against the controller's 20A PV</text>
+<text x="56" y="673" font-size="11" fill="#8c2f22">ceiling - only 2.2A of headroom, and Isc can spike above its STC figure</text>
+<text x="56" y="689" font-size="11" fill="#8c2f22">on cloud edges. Series also starts the MPPT earlier in the morning and</text>
+<text x="56" y="705" font-size="11" fill="#8c2f22">lets the run down to the battery use thinner cable for the same loss.</text>
+
+<rect x="524" y="612" width="300" height="104" rx="8" fill="#fff8ec" stroke="#c2571f" stroke-width="1.4"/>
+<text x="540" y="636" font-size="12.5" font-weight="700" fill="#a8480f">The controller is the ceiling</text>
+<text x="540" y="657" font-size="11" fill="#8d3d14">400W array into a 290W-at-12V controller:</text>
+<text x="540" y="673" font-size="11" fill="#8d3d14">it clips on the best hours. Victron allows the</text>
+<text x="540" y="689" font-size="11" fill="#8d3d14">oversize and simply limits output. Stepping up</text>
+<text x="540" y="705" font-size="11" fill="#8d3d14">to a 100/30 or 100/50 is an open decision.</text>
+</svg>

@@ -4,6 +4,11 @@ Newest entry first.
 
 ## 2026-08-19
 
+- **Drew the mounting and wiring arrangement** — `assets/mounting.svg` (plan, rear
+  and side views, to scale at 6px/in) and `assets/wiring.svg` (the series string).
+  Drawing it to scale confirmed the fit numbers and made the two unknowns obvious:
+  the bed's inside width at rail top, and the clamp against the 1997-2003 rail lip.
+  Both are marked on the drawing in dashed red.
 - Started the project. Two links supplied: a solar panel listing and a truck bed rack,
   to go on a **2001 F-150 SuperCrew** (5.5 ft bed, 67" inside length, 50" between the
   wheelhouses).

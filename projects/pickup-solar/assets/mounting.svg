@@ -1,0 +1,221 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 1500" width="860" height="1500" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="ae" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L8,3 L0,6 z" fill="#6b7480"/>
+  </marker>
+  <marker id="as" markerWidth="9" markerHeight="9" refX="1" refY="3" orient="auto" markerUnits="strokeWidth">
+    <path d="M8,0 L0,3 L8,6 z" fill="#6b7480"/>
+  </marker>
+  <pattern id="cells" width="14" height="14" patternUnits="userSpaceOnUse">
+    <rect width="14" height="14" fill="#1d3a57"/>
+    <path d="M14,0 L14,14 M0,14 L14,14" stroke="#2e5580" stroke-width="1"/>
+  </pattern>
+</defs>
+
+<rect width="860" height="1500" fill="#fbfaf7"/>
+
+<!-- ============ TITLE ============ -->
+<text x="40" y="42" font-size="23" font-weight="700" fill="#1c1e21">Pickup solar - how the panels mount</text>
+<text x="40" y="66" font-size="14" fill="#5b6470">Two Callsun 200W bifacial panels on a JOYTUTUS 11.8" clamp-on bed rack - 2001 F-150 SuperCrew, 5.5 ft bed</text>
+<text x="40" y="86" font-size="12.5" fill="#8a939e">Drawn to scale at 6 px per inch. All dimensions in inches. Dashed red = not verified, measure before ordering.</text>
+<line x1="40" y1="100" x2="820" y2="100" stroke="#d8dbe0" stroke-width="1"/>
+
+<!-- ============ 1. PLAN VIEW ============ -->
+<text x="40" y="128" font-size="15" font-weight="700" fill="#1c1e21">1 - PLAN VIEW  (looking down)</text>
+<text x="305" y="128" font-size="13" fill="#8a939e">panels portrait, long axis fore-aft - the only orientation that fits</text>
+
+<text x="442" y="148" font-size="11" font-weight="600" fill="#8a939e" text-anchor="middle">FRONT OF TRUCK</text>
+<path d="M442,152 L436,162 L448,162 z" fill="#8a939e"/>
+
+<!-- cab -->
+<rect x="226" y="168" width="432" height="42" rx="7" fill="#eef0f2" stroke="#8a939e" stroke-width="1.5"/>
+<text x="442" y="195" font-size="13" font-weight="600" fill="#6b7480" text-anchor="middle">CAB  (SuperCrew)</text>
+
+<!-- bed -->
+<rect x="238" y="214" width="408" height="414" rx="4" fill="#f2f3f5" stroke="#8a939e" stroke-width="1.5"/>
+<rect x="250" y="214" width="384" height="402" fill="#ffffff" stroke="#8a939e" stroke-width="1.5"/>
+<text x="256" y="230" font-size="11" fill="#8a939e">BED  67" inside length</text>
+
+<!-- rack footprint -->
+<rect x="254" y="252" width="376" height="326" fill="none" stroke="#c2571f" stroke-width="2" stroke-dasharray="7 4"/>
+<text x="262" y="268" font-size="11" font-weight="600" fill="#c2571f">RACK FOOTPRINT  54.33 x 62.6</text>
+
+<!-- panels -->
+<rect x="260" y="261" width="181" height="308" fill="url(#cells)" stroke="#0e2135" stroke-width="1.5"/>
+<rect x="443" y="261" width="181" height="308" fill="url(#cells)" stroke="#0e2135" stroke-width="1.5"/>
+<text x="350" y="405" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">PANEL A</text>
+<text x="350" y="423" font-size="11" fill="#c6d6e6" text-anchor="middle">200W</text>
+<text x="533" y="405" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">PANEL B</text>
+<text x="533" y="423" font-size="11" fill="#c6d6e6" text-anchor="middle">200W</text>
+
+<!-- wheelhouses, drawn over the panels to show they sit below -->
+<rect x="250" y="430" width="42" height="110" fill="none" stroke="#9fb6cc" stroke-width="1.3" stroke-dasharray="5 3"/>
+<rect x="592" y="430" width="42" height="110" fill="none" stroke="#9fb6cc" stroke-width="1.3" stroke-dasharray="5 3"/>
+<text transform="rotate(-90 305 485)" x="305" y="485" font-size="9.5" fill="#9fb6cc" text-anchor="middle">wheelhouse below</text>
+<text transform="rotate(-90 585 485)" x="585" y="485" font-size="9.5" fill="#9fb6cc" text-anchor="middle">wheelhouse below</text>
+
+<!-- vertical dimensions -->
+<line x1="232" y1="261" x2="232" y2="569" stroke="#6b7480" stroke-width="1" marker-start="url(#as)" marker-end="url(#ae)"/>
+<line x1="226" y1="261" x2="262" y2="261" stroke="#c8ccd2" stroke-width="0.8"/>
+<line x1="226" y1="569" x2="262" y2="569" stroke="#c8ccd2" stroke-width="0.8"/>
+<text transform="rotate(-90 224 415)" x="224" y="415" font-size="12" font-weight="600" fill="#1c1e21" text-anchor="middle">51.34 panel</text>
+
+<line x1="206" y1="252" x2="206" y2="578" stroke="#6b7480" stroke-width="1" marker-start="url(#as)" marker-end="url(#ae)"/>
+<line x1="200" y1="252" x2="256" y2="252" stroke="#c8ccd2" stroke-width="0.8"/>
+<line x1="200" y1="578" x2="256" y2="578" stroke="#c8ccd2" stroke-width="0.8"/>
+<text transform="rotate(-90 198 415)" x="198" y="415" font-size="12" font-weight="600" fill="#c2571f" text-anchor="middle">54.33 rack</text>
+
+<line x1="180" y1="214" x2="180" y2="616" stroke="#6b7480" stroke-width="1" marker-start="url(#as)" marker-end="url(#ae)"/>
+<line x1="174" y1="214" x2="252" y2="214" stroke="#c8ccd2" stroke-width="0.8"/>
+<line x1="174" y1="616" x2="252" y2="616" stroke="#c8ccd2" stroke-width="0.8"/>
+<text transform="rotate(-90 172 415)" x="172" y="415" font-size="12" font-weight="600" fill="#1c1e21" text-anchor="middle">67.0 bed inside</text>
+
+<!-- horizontal dimensions -->
+<line x1="260" y1="648" x2="441" y2="648" stroke="#6b7480" stroke-width="1" marker-start="url(#as)" marker-end="url(#ae)"/>
+<line x1="443" y1="648" x2="624" y2="648" stroke="#6b7480" stroke-width="1" marker-start="url(#as)" marker-end="url(#ae)"/>
+<text x="350" y="643" font-size="11.5" fill="#1c1e21" text-anchor="middle">30.31</text>
+<text x="533" y="643" font-size="11.5" fill="#1c1e21" text-anchor="middle">30.31</text>
+
+<line x1="260" y1="674" x2="624" y2="674" stroke="#6b7480" stroke-width="1" marker-start="url(#as)" marker-end="url(#ae)"/>
+<text x="442" y="669" font-size="12" font-weight="700" fill="#0e2135" text-anchor="middle">60.62  both panels</text>
+
+<line x1="254" y1="700" x2="630" y2="700" stroke="#c2571f" stroke-width="1" marker-start="url(#as)" marker-end="url(#ae)"/>
+<text x="442" y="695" font-size="12" font-weight="700" fill="#c2571f" text-anchor="middle">62.6  rack at MINIMUM width  (adjusts out to 64.96)</text>
+
+<line x1="250" y1="726" x2="634" y2="726" stroke="#c0392b" stroke-width="1" stroke-dasharray="6 3" marker-start="url(#as)" marker-end="url(#ae)"/>
+<text x="442" y="721" font-size="12" font-weight="700" fill="#c0392b" text-anchor="middle">? bed inside width at rail top - MEASURE THIS</text>
+
+<!-- plan notes -->
+<rect x="668" y="252" width="168" height="126" rx="6" fill="#ffffff" stroke="#d8dbe0" stroke-width="1"/>
+<text x="682" y="273" font-size="11.5" font-weight="700" fill="#1c1e21">Fit margins</text>
+<text x="682" y="293" font-size="11" fill="#5b6470">fore-aft   3.0 total</text>
+<text x="682" y="309" font-size="11" fill="#5b6470">across     2.0 total</text>
+<text x="682" y="325" font-size="10.5" fill="#8a939e">(1.0 per side, at the</text>
+<text x="682" y="339" font-size="10.5" fill="#8a939e">rack's minimum width)</text>
+<text x="682" y="362" font-size="10.5" fill="#8a939e">Widen the rack and the</text>
+<text x="682" y="374" font-size="10.5" fill="#8a939e">side margin grows.</text>
+
+<rect x="668" y="392" width="168" height="104" rx="6" fill="#fdf2f0" stroke="#c0392b" stroke-width="1"/>
+<text x="682" y="413" font-size="11.5" font-weight="700" fill="#c0392b">Why not landscape?</text>
+<text x="682" y="433" font-size="11" fill="#8c2f22">Turned 90 degrees the</text>
+<text x="682" y="448" font-size="11" fill="#8c2f22">pair needs 60.62 fore-aft</text>
+<text x="682" y="463" font-size="11" fill="#8c2f22">on a 54.33 rack - over 6"</text>
+<text x="682" y="478" font-size="11" fill="#8c2f22">of unsupported overhang</text>
+<text x="682" y="490" font-size="11" fill="#8c2f22">at each end.</text>
+
+<text x="668" y="524" font-size="10.5" fill="#8a939e">The 50" between wheelhouses</text>
+<text x="668" y="538" font-size="10.5" fill="#8a939e">does not constrain anything -</text>
+<text x="668" y="552" font-size="10.5" fill="#8a939e">they sit below rack level.</text>
+
+<line x1="40" y1="756" x2="820" y2="756" stroke="#d8dbe0" stroke-width="1"/>
+
+<!-- ============ 2. REAR VIEW ============ -->
+<text x="40" y="784" font-size="15" font-weight="700" fill="#1c1e21">2 - REAR VIEW  (section through the bed)</text>
+<text x="395" y="784" font-size="13" fill="#8a939e">how the rack attaches - and where the risk is</text>
+
+<line x1="254" y1="828" x2="630" y2="828" stroke="#c2571f" stroke-width="1" marker-start="url(#as)" marker-end="url(#ae)"/>
+<text x="442" y="823" font-size="11.5" font-weight="600" fill="#c2571f" text-anchor="middle">62.6 rack (min)</text>
+
+<line x1="260" y1="852" x2="624" y2="852" stroke="#6b7480" stroke-width="1" marker-start="url(#as)" marker-end="url(#ae)"/>
+<text x="442" y="847" font-size="11.5" font-weight="700" fill="#0e2135" text-anchor="middle">60.62 panels</text>
+
+<!-- panels -->
+<rect x="260" y="864" width="181" height="9" fill="#1d3a57" stroke="#0e2135" stroke-width="1"/>
+<rect x="443" y="864" width="181" height="9" fill="#1d3a57" stroke="#0e2135" stroke-width="1"/>
+<text x="646" y="871" font-size="11" fill="#0e2135">panels, 1.4 thick</text>
+
+<!-- crossbar -->
+<rect x="249" y="873" width="386" height="11" rx="2" fill="#c2571f" stroke="#8d3d14" stroke-width="1"/>
+<text x="646" y="887" font-size="11" fill="#c2571f">rack crossbar</text>
+
+<!-- uprights -->
+<rect x="254" y="884" width="11" height="60" fill="#c2571f" stroke="#8d3d14" stroke-width="1"/>
+<rect x="619" y="884" width="11" height="60" fill="#c2571f" stroke="#8d3d14" stroke-width="1"/>
+
+<!-- bed -->
+<rect x="238" y="944" width="12" height="134" fill="#e7e9ec" stroke="#8a939e" stroke-width="1.5"/>
+<rect x="634" y="944" width="12" height="134" fill="#e7e9ec" stroke="#8a939e" stroke-width="1.5"/>
+<rect x="238" y="1078" width="408" height="12" fill="#e7e9ec" stroke="#8a939e" stroke-width="1.5"/>
+<text x="442" y="1020" font-size="12" fill="#8a939e" text-anchor="middle">BED  (22.4" inside depth)</text>
+
+<!-- rail caps -->
+<rect x="232" y="936" width="24" height="9" rx="2" fill="#cdd2d8" stroke="#8a939e" stroke-width="1.2"/>
+<rect x="628" y="936" width="24" height="9" rx="2" fill="#cdd2d8" stroke="#8a939e" stroke-width="1.2"/>
+
+<!-- clamps -->
+<path d="M248,932 L268,932 L268,960 L258,960 L258,942 L248,942 z" fill="none" stroke="#c0392b" stroke-width="2.4"/>
+<path d="M636,932 L616,932 L616,960 L626,960 L626,942 L636,942 z" fill="none" stroke="#c0392b" stroke-width="2.4"/>
+
+<line x1="268" y1="952" x2="330" y2="988" stroke="#c0392b" stroke-width="1"/>
+<circle cx="268" cy="952" r="3" fill="#c0392b"/>
+<rect x="330" y="970" width="316" height="78" rx="6" fill="#fdf2f0" stroke="#c0392b" stroke-width="1.2"/>
+<text x="342" y="989" font-size="11.5" font-weight="700" fill="#c0392b">Clamp grips the inner lip of the bed rail.</text>
+<text x="342" y="1007" font-size="11" fill="#8c2f22">JOYTUTUS lists this rack for F-150 2015-2025. The</text>
+<text x="342" y="1023" font-size="11" fill="#8c2f22">1997-2003 rail is a different section - check the lip</text>
+<text x="342" y="1039" font-size="11" fill="#8c2f22">depth and the clamp throat before ordering.</text>
+
+<!-- rack height dim -->
+<line x1="206" y1="873" x2="206" y2="944" stroke="#6b7480" stroke-width="1" marker-start="url(#as)" marker-end="url(#ae)"/>
+<line x1="200" y1="873" x2="252" y2="873" stroke="#c8ccd2" stroke-width="0.8"/>
+<line x1="200" y1="944" x2="252" y2="944" stroke="#c8ccd2" stroke-width="0.8"/>
+<text transform="rotate(-90 198 908)" x="198" y="908" font-size="11.5" font-weight="600" fill="#c2571f" text-anchor="middle">11.81 rack</text>
+
+<!-- side gap ticks -->
+<line x1="254" y1="864" x2="254" y2="856" stroke="#c0392b" stroke-width="1.4"/>
+<line x1="630" y1="864" x2="630" y2="856" stroke="#c0392b" stroke-width="1.4"/>
+<text x="52" y="988" font-size="11" fill="#5b6470">1.0 of clearance each</text>
+<text x="52" y="1004" font-size="11" fill="#5b6470">side between the panel</text>
+<text x="52" y="1020" font-size="11" fill="#5b6470">edge and the rack upright.</text>
+
+<line x1="40" y1="1112" x2="820" y2="1112" stroke="#d8dbe0" stroke-width="1"/>
+
+<!-- ============ 3. SIDE VIEW ============ -->
+<text x="40" y="1140" font-size="15" font-weight="700" fill="#1c1e21">3 - SIDE VIEW</text>
+<text x="185" y="1140" font-size="13" fill="#8a939e">clears the bed easily fore-aft; finished height is the open question</text>
+
+<text x="106" y="1158" font-size="11" font-weight="600" fill="#8a939e">FRONT</text>
+<path d="M96,1162 L84,1168 L96,1174 z" fill="#8a939e"/>
+
+<!-- fore-aft dims -->
+<line x1="418" y1="1164" x2="744" y2="1164" stroke="#c2571f" stroke-width="1" marker-start="url(#as)" marker-end="url(#ae)"/>
+<text x="581" y="1159" font-size="11.5" font-weight="600" fill="#c2571f" text-anchor="middle">54.33 rack</text>
+<line x1="427" y1="1186" x2="735" y2="1186" stroke="#6b7480" stroke-width="1" marker-start="url(#as)" marker-end="url(#ae)"/>
+<text x="581" y="1181" font-size="11.5" font-weight="700" fill="#0e2135" text-anchor="middle">51.34 panel</text>
+
+<!-- panel top reference level -->
+<line x1="90" y1="1198" x2="425" y2="1198" stroke="#c0392b" stroke-width="1" stroke-dasharray="6 4"/>
+<text x="94" y="1194" font-size="10.5" font-weight="600" fill="#c0392b">panel top level</text>
+
+<!-- panel + rack -->
+<rect x="427" y="1198" width="308" height="9" fill="#1d3a57" stroke="#0e2135" stroke-width="1.2"/>
+<rect x="418" y="1207" width="326" height="10" rx="2" fill="#c2571f" stroke="#8d3d14" stroke-width="1"/>
+<rect x="420" y="1217" width="9" height="61" fill="#c2571f" stroke="#8d3d14" stroke-width="1"/>
+<rect x="733" y="1217" width="9" height="61" fill="#c2571f" stroke="#8d3d14" stroke-width="1"/>
+
+<!-- unverified clearance callout -->
+<text x="110" y="1230" font-size="11" font-weight="700" fill="#c0392b">? cab roof clearance - not verified</text>
+
+<!-- truck body -->
+<path d="M168,1360 L168,1268 L206,1234 L330,1234 L330,1360 z" fill="#eef0f2" stroke="#8a939e" stroke-width="1.5"/>
+<text x="249" y="1300" font-size="12" font-weight="600" fill="#6b7480" text-anchor="middle">CAB</text>
+<path d="M120,1360 L120,1318 L168,1286 L168,1360 z" fill="#eef0f2" stroke="#8a939e" stroke-width="1.5"/>
+<rect x="330" y="1308" width="50" height="52" fill="#eef0f2" stroke="#8a939e" stroke-width="1.5"/>
+<rect x="380" y="1278" width="402" height="82" fill="#f7f8f9" stroke="#8a939e" stroke-width="1.5"/>
+<text x="581" y="1326" font-size="12" fill="#8a939e" text-anchor="middle">BED  67" inside</text>
+
+<!-- ground + wheels -->
+<line x1="80" y1="1404" x2="810" y2="1404" stroke="#8a939e" stroke-width="2"/>
+<circle cx="248" cy="1378" r="26" fill="#ffffff" stroke="#5b6470" stroke-width="3"/>
+<circle cx="700" cy="1378" r="26" fill="#ffffff" stroke="#5b6470" stroke-width="3"/>
+
+<!-- height above rail -->
+<line x1="790" y1="1198" x2="790" y2="1278" stroke="#6b7480" stroke-width="1" marker-start="url(#as)" marker-end="url(#ae)"/>
+<line x1="737" y1="1198" x2="796" y2="1198" stroke="#c8ccd2" stroke-width="0.8"/>
+<line x1="746" y1="1278" x2="796" y2="1278" stroke="#c8ccd2" stroke-width="0.8"/>
+<text transform="rotate(-90 806 1238)" x="806" y="1238" font-size="11.5" font-weight="700" fill="#1c1e21" text-anchor="middle">13.21 above rail</text>
+
+<!-- note -->
+<rect x="80" y="1424" width="392" height="58" rx="6" fill="#ffffff" stroke="#d8dbe0" stroke-width="1"/>
+<text x="94" y="1445" font-size="11" fill="#5b6470">Panel top = 11.81 rack + 1.4 panel = 13.21" above the bed rail.</text>
+<text x="94" y="1463" font-size="11" fill="#5b6470">Measure the finished height of the truck before parking under anything.</text>
+</svg>
