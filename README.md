@@ -13,7 +13,7 @@ page is the single place to see where everything stands.
 | Project | What it is | Status |
 | --- | --- | --- |
 | [Electrical box update](projects/electrical-box-update/) | Update electrical box | Not started |
-| [300Ah battery box](projects/battery-box-300ah/) | Build a box for the 300Ah battery | Planning |
+| [280Ah battery box](projects/battery-box-280ah/) | Battery box with MPPT, shunt and DC outlets | Planning |
 | [Pickup solar](projects/pickup-solar/) | Add solar to the pickup | Not started |
 
 Status values: `Not started` → `Planning` → `In progress` → `Done` → `On hold`
@@ -67,7 +67,7 @@ Then fill in the README, add a row to the status board above, and start logging.
 
 ## Conventions
 
-- Folder names are lowercase and hyphenated (`battery-box-300ah`).
+- Folder names are lowercase and hyphenated (`battery-box-280ah`).
 - Project-specific material stays in that project's folder; only things spanning
   projects go in `docs/`.
 - Log entries are newest-first with an ISO date (`2026-08-15`).
