@@ -4,7 +4,7 @@ Rollup of every sub-project in this repo. Each project lives in its own folder u
 [`projects/`](projects/) with its own notes, bill of materials, and build log. This
 page is the single place to see where everything stands.
 
-**Last updated:** 2026-08-15
+**Last updated:** 2026-08-19
 
 ---
 
@@ -14,7 +14,7 @@ page is the single place to see where everything stands.
 | --- | --- | --- |
 | [Electrical box update](projects/electrical-box-update/) | Update electrical box | Not started |
 | [280Ah battery box](projects/battery-box-280ah/) | Battery box with MPPT, shunt and DC outlets | Planning |
-| [Pickup solar](projects/pickup-solar/) | Add solar to the pickup | Not started |
+| [Pickup solar](projects/pickup-solar/) | 400W on a bed rack, 2001 F-150 SuperCrew | Planning |
 
 Status values: `Not started` → `Planning` → `In progress` → `Done` → `On hold`
 
